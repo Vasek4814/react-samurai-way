@@ -11,7 +11,7 @@ export const getTrack = (trackId: string) => {
     data: GetTrackDetailsOutputData
   }> = fetch("https://musicfun.it-incubator.app/api/1.0/playlists/tracks/" + trackId, {
     headers: {
-      'api-key': '9fcf0d75-36d0-4680-b175-91549b20920a'
+      // 'api-key': '9fcf0d75-36d0-4680-b175-91549b20920a'
     }
   })
     .then(res => res.json())
@@ -36,7 +36,7 @@ type GetTrackListOutput = {
 export const getTracks = () => {
   const promise: Promise<GetTrackListOutput> = fetch("https://musicfun.it-incubator.app/api/1.0/playlists/tracks", {
     headers: {
-      'api-key': '9fcf0d75-36d0-4680-b175-91549b20920a'
+      // 'api-key': '9fcf0d75-36d0-4680-b175-91549b20920a'
     },
   })
     .then(res => res.json())
